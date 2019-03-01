@@ -1,0 +1,22 @@
+# proxy port
+port="8080"
+# relative path to log file
+log="proxy.log"
+# show HTTP message in log
+verbose=true
+# number of thread
+thread=48
+[filter]
+# blacklist for website
+website=["jwts.hit.edu.cn","jwes.hit.edu.cn"]
+# blacklist for user
+ip=["192.168.1.148","172.17.23.101"]
+
+# redirection of domain name
+[[redirect]]
+from="cwc.hit.edu.cn"
+to="mrtg.hit.edu.cn"
+
+[[redirect]]
+from="map.hit.edu.cn"
+to="www.hit.edu.cn"

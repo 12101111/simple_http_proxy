@@ -1,0 +1,15 @@
+[package]
+name = "proxy"
+version = "0.1.0"
+authors = ["12101111 <w12101111@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+toml = "0.4"
+log = "0.4"
+simplelog = "0.5"
+
+[features]
+verbose_log = [] 
